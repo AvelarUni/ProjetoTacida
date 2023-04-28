@@ -1,0 +1,154 @@
+/* Estilo da seção do carrinho */
+.cart-section {
+  padding: 20px;
+  border: 1px solid #ccc;
+  margin-top: 30px;
+}
+
+/* Estilo da tabela de itens */
+.cart-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+/* Estilo da primeira linha da tabela */
+.cart-table thead tr {
+  background-color: #eee;
+}
+
+/* Estilo das células da primeira linha da tabela */
+.cart-table thead tr th {
+  padding: 10px;
+  text-align: left;
+}
+
+/* Estilo das células das outras linhas da tabela */
+.cart-table tbody tr td {
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+/* Estilo do nome do produto */
+.cart-table .product-name {
+  font-weight: bold;
+}
+
+/* Estilo do botão de remover item */
+.cart-table .remove-button {
+  background-color: #f44336;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+/* Estilo do botão de finalizar compra */
+.checkout-button {
+  background-color: #4CAF50;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  font-size: 18px;
+  cursor: pointer;
+  float: right;
+  margin-top: 10px;
+}
+
+/* Estilo da mensagem quando o carrinho está vazio */
+.empty-cart-message {
+  text-align: center;
+  font-size: 18px;
+  margin-top: 30px;
+}
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sacola de compras - Tacida Sabores Caseiros</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<header>
+		<div class="logo">
+			<h1>Tacida Sabores Caseiros</h1>
+		</div>
+		<nav>
+			<ul>
+				<li><a href="#">Produtos</a></li>
+				<li><a href="#">Minha Conta</a></li>
+				<li><a href="#">Sacola de Compras</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<main>
+		<h2>Sacola de Compras</h2>
+		<table>
+			<thead>
+				<tr>
+					<th>Produto</th>
+					<th>Quantidade</th>
+					<th>Preço Unitário</th>
+					<th>Total</th>
+					<th>Ações</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>Bolo de Chocolate</td>
+					<td>
+						<button>-</button>
+						<span>1</span>
+						<button>+</button>
+					</td>
+					<td>R$ 20,00</td>
+					<td>R$ 20,00</td>
+					<td><a href="#">Remover</a></td>
+				</tr>
+				<tr>
+					<td>Bolo de Cenoura</td>
+					<td>
+						<button>-</button>
+						<span>2</span>
+						<button>+</button>
+					</td>
+					<td>R$ 25,00</td>
+					<td>R$ 50,00</td>
+					<td><a href="#">Remover</a></td>
+				</tr>
+				<tr>
+					<td>Bolo de Brigadeiro</td>
+					<td>
+						<button>-</button>
+						<span>1</span>
+						<button>+</button>
+					</td>
+					<td>R$ 18,00</td>
+					<td>R$ 18,00</td>
+					<td><a href="#">Remover</a></td>
+				</tr>
+			</tbody>
+			<tfoot>
+				<tr>
+					<td colspan="3">Total</td>
+					<td>R$ 88,00</td>
+					<td></td>
+				</tr>
+			</tfoot>
+		</table>
+
+		<div class="actions">
+			<button>Continuar Comprando</button>
+			<button>Finalizar Pedido</button>
+		</div>
+	</main>
+
+	<footer>
+		<p>&copy; 2023 Tacida Sabores Caseiros - Todos os direitos reservados</p>
+	</footer>
+</body>
+</html>

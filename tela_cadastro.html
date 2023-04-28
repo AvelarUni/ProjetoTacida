@@ -1,0 +1,104 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+  }
+  
+  .container {
+    width: 90%;
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  h1 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  label {
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  input {
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  
+  button {
+    background-color: #f44336;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    margin-top: 20px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #e53935;
+  }
+  
+  @media (max-width: 480px) {
+    .container {
+      width: 100%;
+      margin: 30px auto;
+      border-radius: 0;
+    }
+  }
+  
+
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tacida Sabores Caseiros - Cadastro</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Cadastro</h1>
+      <form action="#">
+        <label for="name">Nome completo</label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="email">E-mail</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="password">Senha</label>
+        <input type="password" id="password" name="password" required />
+
+        <label for="confirm-password">Confirmar senha</label>
+        <input type="password" id="confirm-password" name="confirm-password" required />
+
+        <label for="phone">Telefone</label>
+        <input type="tel" id="phone" name="phone" required />
+
+        <label for="address">Endereço completo</label>
+        <input type="text" id="address" name="address" required />
+
+        <label for="zip-code">CEP</label>
+        <input type="text" id="zip-code" name="zip-code" required />
+
+        <button type="submit">Cadastrar</button>
+      </form>
+    </div>
+  </body>
+</html>

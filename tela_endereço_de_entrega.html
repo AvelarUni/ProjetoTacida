@@ -1,0 +1,120 @@
+/* Estilos para o formulário de endereço */
+form {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+form label {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+form input[type="text"],
+form input[type="number"],
+form input[type="email"],
+form select {
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  border: none;
+  font-size: 16px;
+}
+
+form input[type="text"],
+form input[type="number"],
+form input[type="email"] {
+  height: 40px;
+}
+
+form select {
+  height: 45px;
+}
+
+form button {
+  background-color: #2ecc71;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  margin-top: 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #27ae60;
+}
+
+/* Estilos para o título da página */
+h1 {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tacida Sabores Caseiros - Endereço de Entrega</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Tacida Sabores Caseiros</h1>
+            <nav>
+                <ul>
+                    <li><a href="#">Início</a></li>
+                    <li><a href="#">Produtos</a></li>
+                    <li><a href="#">Sobre nós</a></li>
+                    <li><a href="#">Contato</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <h2>Endereço de Entrega</h2>
+            <form>
+                <div>
+                    <label for="rua">Rua</label>
+                    <input type="text" id="rua" name="rua" placeholder="Digite o nome da rua">
+                </div>
+                <div>
+                    <label for="numero">Número</label>
+                    <input type="text" id="numero" name="numero" placeholder="Digite o número">
+                </div>
+                <div>
+                    <label for="complemento">Complemento</label>
+                    <input type="text" id="complemento" name="complemento" placeholder="Digite o complemento (opcional)">
+                </div>
+                <div>
+                    <label for="bairro">Bairro</label>
+                    <input type="text" id="bairro" name="bairro" placeholder="Digite o nome do bairro">
+                </div>
+                <div>
+                    <label for="cidade">Cidade</label>
+                    <input type="text" id="cidade" name="cidade" placeholder="Digite o nome da cidade">
+                </div>
+                <div>
+                    <label for="estado">Estado</label>
+                    <input type="text" id="estado" name="estado" placeholder="Digite o nome do estado">
+                </div>
+                <div>
+                    <label for="cep">CEP</label>
+                    <input type="text" id="cep" name="cep" placeholder="Digite o CEP">
+                </div>
+                <button type="submit">Continuar</button>
+            </form>
+        </main>
+        <footer>
+            <p>Tacida Sabores Caseiros - Todos os direitos reservados</p>
+        </footer>
+    </div>
+</body>
+
+</html>
